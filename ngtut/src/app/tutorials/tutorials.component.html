@@ -1,0 +1,16 @@
+<!-- <p>tutorials works!</p> -->
+<form class="form">
+                            <div class="form-group">
+                                <label for="name">Name of tutorial</label>
+                                <input [(ngModel)]="tutorialUserData.name" name="name" type="text" class="form-control rounded-0" required>
+                            </div>
+                                <div class="form-group">
+                                    <label for="name">Description of tutorial</label>
+                                    <input [(ngModel)]="tutorialUserData.description" name="description" type="text" class="form-control rounded-0" required>
+                                </div>
+                            <div class="form-group">
+                                <label for="text">Duration</label>
+                                <input  [(ngModel)]="tutorialUserData.duration" name="duration" type="text" class="form-control rounded-0" required>
+                                <button (click)=tutorialUser() type="button" class="btn btn-primary float-right">Upload Tutorials</button>
+                            </div>
+                        </form>

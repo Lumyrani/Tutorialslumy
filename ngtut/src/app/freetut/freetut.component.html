@@ -1,0 +1,24 @@
+<div class="row mt-5"> 
+    
+        <div class="col-md-5 mb-3">
+       
+          <div class="card text-center" *ngFor="let tutorial of tutorials"> 
+        <div class="p-3 mb-2 bg-warning text-dark"></div>
+                  <label for="name">Subject:</label>
+        <div class="p-3 mb-2 bg-success text-white"> 
+                <h5 class="card-tit">{{tutorial.name}}</h5> 
+    </div> <div class="p-3 mb-2 bg-success text-white"> 
+                  <label for="description">Description:</label>
+                   <p class="card-text">{{tutorial.description}}</p>
+                    
+                </div>
+
+                <div class="card-footer tex-muted"></div>
+ 
+    <label for="duration">Duration:</label>
+           {{tutorial.duration}} 
+     <div class="p-3 mb-2 bg-warning text-dark"></div>
+        </div>
+    
+      </div> 
+    </div>
